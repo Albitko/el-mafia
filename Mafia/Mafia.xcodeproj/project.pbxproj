@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FAC7659426FBAFFD0032D37F /* MafiaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7659326FBAFFD0032D37F /* MafiaApp.swift */; };
-		FAC7659626FBAFFD0032D37F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7659526FBAFFD0032D37F /* ContentView.swift */; };
+		FAC7659626FBAFFD0032D37F /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7659526FBAFFD0032D37F /* StartView.swift */; };
 		FAC7659826FBB0000032D37F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC7659726FBB0000032D37F /* Assets.xcassets */; };
 		FAC7659B26FBB0000032D37F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC7659A26FBB0000032D37F /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		FAC7659026FBAFFD0032D37F /* Mafia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mafia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC7659326FBAFFD0032D37F /* MafiaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MafiaApp.swift; sourceTree = "<group>"; };
-		FAC7659526FBAFFD0032D37F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FAC7659526FBAFFD0032D37F /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		FAC7659726FBB0000032D37F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC7659A26FBB0000032D37F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FAC7659C26FBB0000032D37F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				FAC7659326FBAFFD0032D37F /* MafiaApp.swift */,
-				FAC7659526FBAFFD0032D37F /* ContentView.swift */,
+				FAC7659526FBAFFD0032D37F /* StartView.swift */,
 				FAC7659726FBB0000032D37F /* Assets.xcassets */,
 				FAC7659C26FBB0000032D37F /* Info.plist */,
 				FAC7659926FBB0000032D37F /* Preview Content */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAC7659626FBAFFD0032D37F /* ContentView.swift in Sources */,
+				FAC7659626FBAFFD0032D37F /* StartView.swift in Sources */,
 				FAC7659426FBAFFD0032D37F /* MafiaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
