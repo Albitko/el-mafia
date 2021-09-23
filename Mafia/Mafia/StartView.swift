@@ -12,25 +12,40 @@ struct StartView: View {
     let gradient = Gradient(colors: [.black, .blue])
     
     var body: some View {
+        
+        let gradient = Gradient(colors: [.black, .pink])
+        
         ZStack {
             Rectangle()
-                .fill(LinearGradient(gradient: gradient, startPoint: .bottom, endPoint: .top))
+                .fill(LinearGradient(gradient: gradient, startPoint: .bottomTrailing, endPoint: .topLeading))
                 .ignoresSafeArea()
-            
-            VStack {
-                Text("El Mafia")
-                    .fontWeight(.heavy)
-                    .foregroundColor(.pink)
-                    .font(.headline)
-                
-                Button("Button title") {
-                    print("Button tapped!")
-                }
-                .padding()
-                .background(Color.init(.cyan))
+            VStack{
+                NavigationView {
+                    NavigationLink(
+                        destination: EnterView(),
+                        label: {
+                            Text("СОЗДАТЬ")
+                                .bold()
+                                .frame(width: 150, height: 70)
+                                .cornerRadius(15.0)
+                                .background(Color.theme.activeColor)
+                                .foregroundColor(Color.theme.secondaryText)
+                    })
+                    NavigationLink(
+                        destination: EnterView(),
+                        label: {
+                            Text("СОЗДАТЬ")
+                                .bold()
+                                .frame(width: 150, height: 70)
+                                .cornerRadius(15.0)
+                                .background(Color.theme.activeColor)
+                                .foregroundColor(Color.theme.secondaryText)
+                    })
+                }.foregroundColor(.blue)
             }
-        }
             
+
+        }
     }
 }
     

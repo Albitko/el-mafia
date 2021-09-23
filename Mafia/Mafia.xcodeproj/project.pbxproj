@@ -11,6 +11,8 @@
 		FAC7659626FBAFFD0032D37F /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7659526FBAFFD0032D37F /* StartView.swift */; };
 		FAC7659826FBB0000032D37F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC7659726FBB0000032D37F /* Assets.xcassets */; };
 		FAC7659B26FBB0000032D37F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC7659A26FBB0000032D37F /* Preview Assets.xcassets */; };
+		FAC765A326FD061F0032D37F /* EnterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC765A226FD061F0032D37F /* EnterView.swift */; };
+		FAC765A626FD08750032D37F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC765A526FD08750032D37F /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		FAC7659726FBB0000032D37F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC7659A26FBB0000032D37F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FAC7659C26FBB0000032D37F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC765A226FD061F0032D37F /* EnterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterView.swift; sourceTree = "<group>"; };
+		FAC765A526FD08750032D37F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +56,13 @@
 		FAC7659226FBAFFD0032D37F /* Mafia */ = {
 			isa = PBXGroup;
 			children = (
+				FAC765A426FD08600032D37F /* Extensions */,
 				FAC7659326FBAFFD0032D37F /* MafiaApp.swift */,
 				FAC7659526FBAFFD0032D37F /* StartView.swift */,
 				FAC7659726FBB0000032D37F /* Assets.xcassets */,
 				FAC7659C26FBB0000032D37F /* Info.plist */,
 				FAC7659926FBB0000032D37F /* Preview Content */,
+				FAC765A226FD061F0032D37F /* EnterView.swift */,
 			);
 			path = Mafia;
 			sourceTree = "<group>";
@@ -67,6 +73,14 @@
 				FAC7659A26FBB0000032D37F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAC765A426FD08600032D37F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAC765A526FD08750032D37F /* Color.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAC7659626FBAFFD0032D37F /* StartView.swift in Sources */,
+				FAC765A626FD08750032D37F /* Color.swift in Sources */,
 				FAC7659426FBAFFD0032D37F /* MafiaApp.swift in Sources */,
+				FAC765A326FD061F0032D37F /* EnterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
