@@ -13,42 +13,31 @@ struct StartView: View {
     
     var body: some View {
         
-        let gradient = Gradient(colors: [.black, .pink])
-        
-        ZStack {
-            Rectangle()
-                .fill(LinearGradient(gradient: gradient, startPoint: .bottomTrailing, endPoint: .topLeading))
-                .ignoresSafeArea()
-            VStack{
-                NavigationView {
-                    NavigationLink(
-                        destination: EnterView(),
-                        label: {
-                            Text("СОЗДАТЬ")
-                                .bold()
-                                .frame(width: 150, height: 70)
-                                .cornerRadius(15.0)
-                                .background(Color.theme.activeColor)
-                                .foregroundColor(Color.theme.secondaryText)
-                    })
-                    NavigationLink(
-                        destination: EnterView(),
-                        label: {
-                            Text("СОЗДАТЬ")
-                                .bold()
-                                .frame(width: 150, height: 70)
-                                .cornerRadius(15.0)
-                                .background(Color.theme.activeColor)
-                                .foregroundColor(Color.theme.secondaryText)
-                    })
-                }.foregroundColor(.blue)
+        NavigationView {
+            VStack {
+                
+                VStack(alignment: .leading) {
+                    Text("EL")
+                    Text("MAFIA")
+                }
+                .font(.largeTitle)
+                
+                Spacer()
+                
+                NavigationLink(destination: EnterNameView(isCreator : true)) {
+                    Text("Создать")
+                }
+                NavigationLink(destination: EnterNameView(isCreator : false)) {
+                    Text("Войти")
+                }
+                
+                Spacer()
             }
-            
-
         }
+
+        
     }
 }
-    
 
 struct StartView_Previews: PreviewProvider {
     static var previews: some View {

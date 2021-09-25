@@ -14,14 +14,22 @@ struct EnterRoomView: View {
     var body: some View {
         VStack {
             Text("Введите номер комнаты")
+                .font(.largeTitle)
+            
             TextField(
                 "123456",
                  text: $room
             )
+            .disableAutocorrection(true)
+            .multilineTextAlignment(.center)
+            .padding()
+            
             NavigationLink(destination: RoomView()) {
                 Text("ВПЕРЕД")
+                    .foregroundColor(.black)
             }
         }
+        .textFieldStyle(.roundedBorder)
     }
 }
 
