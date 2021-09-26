@@ -24,17 +24,18 @@ struct StartView: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: EnterNameView(isCreator : true)) {
+                NavigationLink(destination: EnterUserDataView(isCreator : true)) {
                     Text("Создать")
                 }
-                NavigationLink(destination: EnterNameView(isCreator : false)) {
+                NavigationLink(destination: EnterUserDataView(isCreator : false)) {
                     Text("Войти")
                 }
                 
                 Spacer()
             }
+            
         }
-
+        .navigationBarHidden(true)
         
     }
 }

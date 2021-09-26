@@ -13,9 +13,8 @@
 		FAC7659626FBAFFD0032D37F /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7659526FBAFFD0032D37F /* StartView.swift */; };
 		FAC7659826FBB0000032D37F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC7659726FBB0000032D37F /* Assets.xcassets */; };
 		FAC7659B26FBB0000032D37F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC7659A26FBB0000032D37F /* Preview Assets.xcassets */; };
-		FAC765A326FD061F0032D37F /* EnterNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC765A226FD061F0032D37F /* EnterNameView.swift */; };
+		FAC765A326FD061F0032D37F /* EnterUserDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC765A226FD061F0032D37F /* EnterUserDataView.swift */; };
 		FAC765A626FD08750032D37F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC765A526FD08750032D37F /* Color.swift */; };
-		FAC765A826FF8D6C0032D37F /* EnterRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC765A726FF8D6C0032D37F /* EnterRoomView.swift */; };
 		FAC765AA26FF8E230032D37F /* RoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC765A926FF8E230032D37F /* RoomView.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,9 +27,8 @@
 		FAC7659726FBB0000032D37F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC7659A26FBB0000032D37F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FAC7659C26FBB0000032D37F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAC765A226FD061F0032D37F /* EnterNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNameView.swift; sourceTree = "<group>"; };
+		FAC765A226FD061F0032D37F /* EnterUserDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterUserDataView.swift; sourceTree = "<group>"; };
 		FAC765A526FD08750032D37F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		FAC765A726FF8D6C0032D37F /* EnterRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterRoomView.swift; sourceTree = "<group>"; };
 		FAC765A926FF8E230032D37F /* RoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,6 +43,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA772A382700A59600E9DD5A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FA772A3F2700AA4800E9DD5A /* GameScreens */,
+				FA772A3E2700AA3300E9DD5A /* InitialScreens */,
+				FA772A392700A5AE00E9DD5A /* Components */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FA772A392700A5AE00E9DD5A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FAB34FC826FF972500E8D821 /* UserRowView.swift */,
+				FAB34FCA26FF9AA300E8D821 /* RolesView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FA772A3E2700AA3300E9DD5A /* InitialScreens */ = {
+			isa = PBXGroup;
+			children = (
+				FA772A412700AA5B00E9DD5A /* ViewModels */,
+				FA772A402700AA5400E9DD5A /* Views */,
+			);
+			path = InitialScreens;
+			sourceTree = "<group>";
+		};
+		FA772A3F2700AA4800E9DD5A /* GameScreens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GameScreens;
+			sourceTree = "<group>";
+		};
+		FA772A402700AA5400E9DD5A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAC7659526FBAFFD0032D37F /* StartView.swift */,
+				FAC765A226FD061F0032D37F /* EnterUserDataView.swift */,
+				FAC765A926FF8E230032D37F /* RoomView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA772A412700AA5B00E9DD5A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		FAC7658726FBAFFD0032D37F = {
 			isa = PBXGroup;
 			children = (
@@ -64,15 +114,9 @@
 		FAC7659226FBAFFD0032D37F /* Mafia */ = {
 			isa = PBXGroup;
 			children = (
-				FAC765AB26FF8E290032D37F /* Views */,
+				FA772A382700A59600E9DD5A /* Core */,
 				FAC765A426FD08600032D37F /* Extensions */,
 				FAC7659326FBAFFD0032D37F /* MafiaApp.swift */,
-				FAC7659526FBAFFD0032D37F /* StartView.swift */,
-				FAC765A226FD061F0032D37F /* EnterNameView.swift */,
-				FAC765A726FF8D6C0032D37F /* EnterRoomView.swift */,
-				FAC765A926FF8E230032D37F /* RoomView.swift */,
-				FAB34FC826FF972500E8D821 /* UserRowView.swift */,
-				FAB34FCA26FF9AA300E8D821 /* RolesView.swift */,
 				FAC7659726FBB0000032D37F /* Assets.xcassets */,
 				FAC7659C26FBB0000032D37F /* Info.plist */,
 				FAC7659926FBB0000032D37F /* Preview Content */,
@@ -94,13 +138,6 @@
 				FAC765A526FD08750032D37F /* Color.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		FAC765AB26FF8E290032D37F /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,13 +210,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB34FC926FF972500E8D821 /* UserRowView.swift in Sources */,
-				FAC765A826FF8D6C0032D37F /* EnterRoomView.swift in Sources */,
 				FAB34FCB26FF9AA300E8D821 /* RolesView.swift in Sources */,
 				FAC7659626FBAFFD0032D37F /* StartView.swift in Sources */,
 				FAC765A626FD08750032D37F /* Color.swift in Sources */,
 				FAC765AA26FF8E230032D37F /* RoomView.swift in Sources */,
 				FAC7659426FBAFFD0032D37F /* MafiaApp.swift in Sources */,
-				FAC765A326FD061F0032D37F /* EnterNameView.swift in Sources */,
+				FAC765A326FD061F0032D37F /* EnterUserDataView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

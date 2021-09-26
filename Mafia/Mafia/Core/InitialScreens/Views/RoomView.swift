@@ -54,6 +54,7 @@ struct RoomView: View {
             
             RolesView(roles: roles)
         }
+        .navigationBarBackButtonHidden(true)
         
     }
 }
