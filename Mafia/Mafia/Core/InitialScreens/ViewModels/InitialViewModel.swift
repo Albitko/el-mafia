@@ -10,6 +10,8 @@ import SwiftUI
 
 class InitialViewModel: ObservableObject {
     
+    @Published var users: [User] = [User(name: "x", isReady: false, role: .mafia)]
+    
     func createNewRoom(creatorName: String) {
         print(creatorName)
     }

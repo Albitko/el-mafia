@@ -10,6 +10,7 @@
 		FA772A432700AB0F00E9DD5A /* InitialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA772A422700AB0F00E9DD5A /* InitialViewModel.swift */; };
 		FA772A462700ACAD00E9DD5A /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA772A452700ACAD00E9DD5A /* SocketService.swift */; };
 		FA772A4A2700B09F00E9DD5A /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = FA772A492700B09F00E9DD5A /* SocketIO */; };
+		FA772A4D2702439E00E9DD5A /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA772A4C2702439E00E9DD5A /* GameModel.swift */; };
 		FAB34FC926FF972500E8D821 /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB34FC826FF972500E8D821 /* UserRowView.swift */; };
 		FAB34FCB26FF9AA300E8D821 /* RolesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB34FCA26FF9AA300E8D821 /* RolesView.swift */; };
 		FAC7659426FBAFFD0032D37F /* MafiaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7659326FBAFFD0032D37F /* MafiaApp.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		FA772A422700AB0F00E9DD5A /* InitialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewModel.swift; sourceTree = "<group>"; };
 		FA772A452700ACAD00E9DD5A /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
+		FA772A4C2702439E00E9DD5A /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		FAB34FC826FF972500E8D821 /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
 		FAB34FCA26FF9AA300E8D821 /* RolesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolesView.swift; sourceTree = "<group>"; };
 		FAC7659026FBAFFD0032D37F /* Mafia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mafia.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +56,7 @@
 			children = (
 				FA772A3F2700AA4800E9DD5A /* GameScreens */,
 				FA772A3E2700AA3300E9DD5A /* InitialScreens */,
+				FA772A4B2702434F00E9DD5A /* Models */,
 				FA772A442700AC1F00E9DD5A /* Services */,
 				FA772A392700A5AE00E9DD5A /* Components */,
 			);
@@ -109,6 +112,14 @@
 				FA772A452700ACAD00E9DD5A /* SocketService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		FA772A4B2702434F00E9DD5A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA772A4C2702439E00E9DD5A /* GameModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		FAC7658726FBAFFD0032D37F = {
@@ -236,6 +247,7 @@
 				FAC7659626FBAFFD0032D37F /* StartView.swift in Sources */,
 				FAC765A626FD08750032D37F /* Color.swift in Sources */,
 				FAC765AA26FF8E230032D37F /* RoomView.swift in Sources */,
+				FA772A4D2702439E00E9DD5A /* GameModel.swift in Sources */,
 				FAC7659426FBAFFD0032D37F /* MafiaApp.swift in Sources */,
 				FAC765A326FD061F0032D37F /* EnterUserDataView.swift in Sources */,
 				FA772A432700AB0F00E9DD5A /* InitialViewModel.swift in Sources */,
