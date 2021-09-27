@@ -9,15 +9,17 @@ import SwiftUI
 
 struct EnterUserDataView: View {
     
+    @EnvironmentObject private var vm: InitialViewModel
     @State private var userName: String = ""
     @State private var roomNumber: String = ""
+    @State private var isEnteredRoom = false
     @State private var isEnteredName = false
     var isCreator: Bool
     
     var body: some View {
         
         VStack(alignment: .center) {
-            if isCreator || isEnteredName {
+            if isCreator || isEnteredRoom {
                 
                 Text("Введите имя")
                     .font(.largeTitle)
@@ -31,9 +33,13 @@ struct EnterUserDataView: View {
                     .padding()
                 
                 
-                NavigationLink(destination: RoomView()) {
-                    Text("ДАЛЕЕ")
-                        .foregroundColor(.black)
+                Button("ДАЛЕЕ") {
+                    isEnteredName.toggle()
+                    if isCreator {
+                        vm.createNewRoom(creatorName: userName)
+                    } else {
+                        vm.connectToRoom(userName: userName, roomNumber: roomNumber)
+                    }
                 }
             } else {
                 Text("Введите номер комнаты")
@@ -48,11 +54,17 @@ struct EnterUserDataView: View {
                 .padding()
                 
                 Button("ДАЛЕЕ") {
-                    isEnteredName.toggle()
+                    isEnteredRoom.toggle()
                 }
                 
             }
         }
+        .background(
+            NavigationLink(
+                destination: RoomView(),
+                isActive: $isEnteredName,
+                label: { EmptyView() })
+            )
         .padding()
             
     }

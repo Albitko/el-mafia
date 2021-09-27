@@ -9,8 +9,6 @@ import SwiftUI
 
 struct StartView: View {
     
-    let gradient = Gradient(colors: [.black, .blue])
-    
     var body: some View {
         
         NavigationView {

@@ -10,9 +10,12 @@ import SwiftUI
 @main
 struct MafiaApp: App {
     
+    @StateObject private var vm = InitialViewModel()
+    
     var body: some Scene {
         WindowGroup {
                 StartView()
+                    .environmentObject(vm)
         }
     }
 }

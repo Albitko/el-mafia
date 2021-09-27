@@ -30,6 +30,8 @@ struct RoomView: View {
         "Doctor": 1
     ]
     
+    @EnvironmentObject private var vm: InitialViewModel
+    
     var body: some View {
         VStack {
             Text("Комната N 1234")
@@ -45,7 +47,15 @@ struct RoomView: View {
                 }
                 
                 Button("ГОТОВ") {
+                    vm.sendTestMsg()
                     print("Button tapped!")
+                    vm.sendeSomeBody()
+                }
+                Button("Listen") {
+                    vm.listenTest()
+                }
+                Button("Send") {
+                    vm.sendeSomeBody()
                 }
                 .padding()
             }
